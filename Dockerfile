@@ -8,4 +8,4 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 
 EXPOSE 27017
-CMD ["mongod", "--config", "/etc/mongod.conf"]
+CMD ["mongod", "--config", "/etc/mongod.conf", "--bind_ip", "0.0.0.0"]
